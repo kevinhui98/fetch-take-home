@@ -52,8 +52,12 @@ The app gracefully falls back to OkHttp if the Ktor request fails (e.g., DNS res
 
 Designed to work smoothly even on a fresh emulator boot.
 
-## ✨ Screenshots
+## ✨ App Walkthrough
 Grouped List with Pull-to-Refresh
+
+<img src="fetch-take-home.gif" width="500"/>
+
+https://imgur.com/a/yGsMV7Q
 
 ## 👋 Author
 Built with ❤️ by Kevin H
