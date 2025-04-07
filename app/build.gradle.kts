@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    kotlin("plugin.serialization")version "1.9.22"
 }
 
 android {
@@ -56,4 +57,32 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // Jetpack Compose UI Core
+    implementation("androidx.compose.ui:ui:1.5.4")
+
+    // Material3 Design System
+    implementation("androidx.compose.material3:material3:1.1.2")
+
+    // Compose preview support (optional)
+    implementation("androidx.compose.ui:ui-tooling-preview:1.5.4")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.5.4")
+
+    // Activity support for Compose
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.compose.foundation:foundation:1.5.4")
+
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    // Ktor Client with JSON support
+    implementation("io.ktor:ktor-client-core:2.3.6")
+    implementation("io.ktor:ktor-client-cio:2.3.6")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.6")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.6")
+
+    // kotlinx.serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
